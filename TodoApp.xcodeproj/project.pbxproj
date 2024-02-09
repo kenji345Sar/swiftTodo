@@ -14,6 +14,7 @@
 		1835FFE12B6F89ED0025F88A /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1835FFE02B6F89ED0025F88A /* ListRow.swift */; };
 		1835FFE32B70737B0025F88A /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1835FFE22B70737B0025F88A /* UserData.swift */; };
 		1835FFE92B720D980025F88A /* UserTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1835FFE82B720D980025F88A /* UserTask.swift */; };
+		1835FFEB2B75E7020025F88A /* Draft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1835FFEA2B75E7020025F88A /* Draft.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		1835FFE02B6F89ED0025F88A /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
 		1835FFE22B70737B0025F88A /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		1835FFE82B720D980025F88A /* UserTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTask.swift; sourceTree = "<group>"; };
+		1835FFEA2B75E7020025F88A /* Draft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draft.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				1835FFE22B70737B0025F88A /* UserData.swift */,
 				1835FFE82B720D980025F88A /* UserTask.swift */,
 				1835FFE02B6F89ED0025F88A /* ListRow.swift */,
+				1835FFEA2B75E7020025F88A /* Draft.swift */,
 				1835FF9F2B5CD9AC0025F88A /* Assets.xcassets */,
 				1835FFA12B5CD9AC0025F88A /* Preview Content */,
 			);
@@ -149,6 +152,7 @@
 				1835FFE92B720D980025F88A /* UserTask.swift in Sources */,
 				1835FF9E2B5CD9A70025F88A /* ContentView.swift in Sources */,
 				1835FF9C2B5CD9A70025F88A /* TodoAppApp.swift in Sources */,
+				1835FFEB2B75E7020025F88A /* Draft.swift in Sources */,
 				1835FFE32B70737B0025F88A /* UserData.swift in Sources */,
 				1835FFE12B6F89ED0025F88A /* ListRow.swift in Sources */,
 			);
