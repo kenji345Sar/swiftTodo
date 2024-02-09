@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @ObservedObject var userData = UserData()
-    
+    @EnvironmentObject var userData: UserData
+
     var body: some View {
         NavigationView{
             List{
@@ -51,6 +51,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
             ContentView()
+            .environmentObject(UserData())
     }
 }
 
