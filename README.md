@@ -8,3 +8,5 @@ new4-branch
 
 new5-branch uuidをidにする
 
+new6-branch 一旦taskを簡易に変更できるように変更
+
