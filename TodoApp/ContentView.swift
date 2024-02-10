@@ -10,20 +10,21 @@ import SwiftUI
 
 class UserData:ObservableObject {
    @Published var tasks = [
-        Task(title: "散歩", checked: true),
-        Task(title: "料理", checked: false),
-        Task(title: "筋トレ", checked: true)
+     Task(id:1, title: "散歩", checked: true),
+     Task(id:2, title: "料理", checked: false),
+     Task(id:3, title: "筋トレ", checked: true)
     ]
     
     @Published var isEditing: Bool = false
 }
 
 struct Task: Identifiable,Equatable {
-    let id = UUID()
+    let id: Int
     var title: String
     var checked: Bool
     
-    init(title: String, checked: Bool) {
+    init(id: Int, title: String, checked: Bool) {
+        self.id = id
         self.title = title
         self.checked = checked
     }
@@ -75,12 +76,12 @@ struct ListRow: View {
 }
 
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-            ContentView()
-    }
-}
-
-//#Preview {
-//    ContentView()
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//            ContentView()
+//    }
 //}
+
+#Preview {
+    ContentView()
+}
