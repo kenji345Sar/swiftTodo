@@ -8,16 +8,6 @@
 import SwiftUI
 
 
-class UserData:ObservableObject {
-   @Published var tasks = [
-     Task(id:1, title: "散歩", checked: true),
-     Task(id:2, title: "料理", checked: false),
-     Task(id:3, title: "筋トレ", checked: true)
-    ]
-    
-    @Published var isEditing: Bool = false
-}
-
 struct Task: Identifiable,Equatable {
     let id: Int
     var title: String
@@ -33,23 +23,22 @@ struct Task: Identifiable,Equatable {
 
 struct ContentView: View {
     
-    @ObservedObject var userData = UserData()
+    @State private var tasks = [
+        Task(id:1,title:"散歩",checked: true),
+        Task(id:2,title:"料理",checked:false),
+        Task(id:3,title:"筋トレ",checked: true)
+    ]
     
     
     var body: some View {
             List{
-                ForEach(userData.tasks) { task in
-                    Button(action:{
-                        
-                        guard let index = self.userData.tasks.firstIndex(of: task) else {
-                            return
-                        }
-                        self.userData.tasks[index].checked.toggle()
-                    })
-                    {
-                        ListRow(task:task.title,isCheck: task.checked)
+                ForEach(tasks.indices, id: \.self) { index in
+                    Button(action: {
+                        // 直接tasksの要素を変更
+                        tasks[index].checked.toggle()
+                    }) {
+                        ListRow(task: tasks[index].title, isCheck: tasks[index].checked)
                     }
-
                 }
             }
  
