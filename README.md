@@ -16,4 +16,4 @@ new8-branch 表示のみ(new6-branch)
 
 new9-branch Toggleコンポーネント使用(new6-branch)
 
-new10-branch 子コンポーネント化
+new10-branch 子コンポーネント化(new9-branch)
