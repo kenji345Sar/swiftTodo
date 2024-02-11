@@ -7,20 +7,6 @@
 
 import SwiftUI
 
-
-struct Task: Identifiable,Equatable {
-    let id: Int
-    var title: String
-    var checked: Bool
-    
-    init(id: Int, title: String, checked: Bool) {
-        self.id = id
-        self.title = title
-        self.checked = checked
-    }
-}
-
-
 struct ContentView: View {
     
     @State private var tasks = [
@@ -44,26 +30,6 @@ struct ContentView: View {
  
     }
 }
-
-struct ListRow: View {
-    let task: String
-    var isCheck: Bool
-
-    var body: some View {
-        HStack {
-            if isCheck {
-                Text("☑︎")
-                Text(task)
-                    .strikethrough()
-                    .fontWeight(.ultraLight)
-            } else {
-                Text("□")
-                Text(task)
-            }
-        }
-    }
-}
-
 
 //struct ContentView_Previews: PreviewProvider {
 //    static var previews: some View {
