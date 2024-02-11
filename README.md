@@ -12,4 +12,8 @@ new6-branch 一旦taskを簡易に変更できるように変更
 
 new7-branch new6-branchのファイルを分ける
 
-new6-branch 表示のみ(new6-branch)
+new8-branch 表示のみ(new6-branch)
+
+new9-branch Toggleコンポーネント使用(new6-branch)
+
+new１０-branch 子コンポーネント化
